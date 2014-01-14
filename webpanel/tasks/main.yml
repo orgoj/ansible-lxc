@@ -1,0 +1,5 @@
+---
+- name: install lxc web panel
+  shell: >
+    'wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash' 
+    creates="/etc/init.d/lwp"

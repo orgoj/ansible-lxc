@@ -1,0 +1,6 @@
+---
+- name: install lxc packages
+  apt: pkg={{ item }} state=present
+  with_items:
+    - lxc
+    - lxc-templates
